@@ -58,19 +58,19 @@ BUTTON_SENSORS: tuple[MammotionButtonSensorEntityDescription, ...] = (
     ),
     MammotionButtonSensorEntityDescription(
         key="emergency_nudge_forward",
-        press_fn=lambda coordinator: coordinator.async_move_forward(0.4),
+        press_fn=lambda coordinator: coordinator.async_move_forward(50),
     ),
     MammotionButtonSensorEntityDescription(
         key="emergency_nudge_left",
-        press_fn=lambda coordinator: coordinator.async_move_left(0.4),
+        press_fn=lambda coordinator: coordinator.async_move_left(50),
     ),
     MammotionButtonSensorEntityDescription(
         key="emergency_nudge_right",
-        press_fn=lambda coordinator: coordinator.async_move_right(0.4),
+        press_fn=lambda coordinator: coordinator.async_move_right(50),
     ),
     MammotionButtonSensorEntityDescription(
         key="emergency_nudge_back",
-        press_fn=lambda coordinator: coordinator.async_move_back(0.4),
+        press_fn=lambda coordinator: coordinator.async_move_back(50),
     ),
     MammotionButtonSensorEntityDescription(
         key="cancel_task",
